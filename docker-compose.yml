@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  testbarigui.send:
+    image: ${DOCKER_REGISTRY-}testbariguisend
+    build:
+      context: .
+      dockerfile: TestBarigui.Send\Dockerfile
+
+  testbarigui.receiver:
+    image: ${DOCKER_REGISTRY-}testbariguireceiver
+    build:
+      context: .
+      dockerfile: TestBarigui.Receiver\Dockerfile
+

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SimpleInjector" Version="4.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TestBarigui.Ioc\MessageMQ.Ioc.csproj" />
+    <ProjectReference Include="..\TestBarigui\MessageMQ.Domain.Core.csproj" />
+  </ItemGroup>
+
+</Project>
