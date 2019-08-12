@@ -103,7 +103,7 @@ namespace TestBarigui.Core.Consumer
                     Text = text,
                     TimeStamp = DateTime.Now
                 };
-                Console.WriteLine("Sent Guid message #{0} ", message.ToString());
+                Console.WriteLine("Sent message #{0} ", message.ToString());
                 SendMessage(message.ToString());
                 Thread.Sleep(5000);
             }
